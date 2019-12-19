@@ -3,6 +3,6 @@ RUN pip install bert-serving-server
 COPY ./ /app
 COPY ./entrypoint.sh /app
 WORKDIR /app
+COPY uncased_L-12_H-768_A-12 /model
 ENTRYPOINT ["/app/entrypoint.sh"]
 CMD []
-
